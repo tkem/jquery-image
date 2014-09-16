@@ -2,16 +2,8 @@
     "name": "<%= pkg.name.replace(/^jquery-/, '') %>",
     "version": "<%= pkg.version %>",
     "title": "<%= pkg.title %>",
-    "author": {
-        "name": "<%= pkg.author.name %>",
-        "email": "<%= pkg.author.email %>"
-    },
-    "licenses": [
-        {
-            "type": "<%= pkg.license %>",
-            "url": "<%= pkg.repository.url.replace(/\.git$/, '') %>/blob/master/LICENSE"
-        }
-    ],
+    "author": <%= JSON.stringify(pkg.author) %>,
+    "licenses": <%= JSON.stringify(pkg.licenses) %>,
     "dependencies": {
         "jquery": "<%= pkg.dependencies.jquery %>"
     },

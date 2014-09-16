@@ -6,7 +6,12 @@
     "keywords":  ["image", "onload", "deferred", "promise"],
     "homepage": "http://github.com/tkem/jquery-image/",
     "bugs": "https://github.com/tkem/jquery-image/issues/",
-    "license": "MIT",
+    "licenses": [
+        {
+            "type": "MIT",
+            "url": "http://raw.github.com/tkem/jquery-image/master/LICENSE"
+        }
+    ],
     "main": "dist/jquery.image.js",
     "author": {
         "name": "Thomas Kemmer",

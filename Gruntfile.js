@@ -6,10 +6,12 @@ module.exports = function(grunt) {
 
         plugin: "<%= pkg.name.replace(/^jquery-/, '') %>",
 
+        manifest: "<%= plugin %>.jquery.json",
+
         copyright: "(c) <%= grunt.template.today('yyyy') %>",
 
         clean: {
-            files: ["dist"]
+            files: ["dist", "<%= manifest %>", "bower.json"]
         },
 
         concat: {
@@ -20,19 +22,20 @@ module.exports = function(grunt) {
                         " * <%= pkg.homepage %>\n" +
                         " *\n" +
                         " * Copyright <%= copyright %> <%= pkg.author.name %>.\n" +
-                        " * Released under the <%= pkg.license %> License.\n" +
+                        " * Released under the <%= pkg.licenses[0].type %> License.\n" +
+                        " * <%= pkg.licenses[0].url %>\n" +
                         " */\n",
                     stripBanners: true
                 },
                 src: ["src/**/*.js"],
                 dest: "<%= pkg.main %>"
             },
-            plugin: {
+            manifest: {
                 options: {
                     process: true
                 },
                 src: ["src/plugin.json"],
-                dest: "<%= plugin %>.jquery.json"
+                dest: "<%= manifest %>"
             },
             bower: {
                 options: {
@@ -47,7 +50,7 @@ module.exports = function(grunt) {
             options: {
                 banner: "/*! <%= pkg.title || pkg.name %> v<%= pkg.version %> | " +
                     "<%= copyright %> <%= pkg.author.name %> | " +
-                    "<%= pkg.license %> License */\n"
+                    "<%= pkg.licenses[0].type %> License */\n"
             },
             dist: {
                 src: ["<%= pkg.main %>"],

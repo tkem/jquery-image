@@ -3,7 +3,7 @@
     "description": "<%= pkg.description %>",
     "version": "<%= pkg.version %>",
     "main": "<%= pkg.main %>",
-    "license": "<%= pkg.license %>",
+    "license": "<%= pkg.licenses[0].type %>",
     "ignore": [
         "**/.*",
         "**/*.json",
