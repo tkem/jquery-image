@@ -1,0 +1,14 @@
+{
+    "name": "image",
+    "version": "0.1.0",
+    "title": "jQuery Deferred Image Plugin",
+    "author": {"name":"Thomas Kemmer","email":"tkemmer@computer.org"},
+    "licenses": [{"type":"MIT","url":"http://raw.github.com/tkem/jquery-image/master/LICENSE"}],
+    "dependencies": {
+        "jquery": ">=1.5"
+    },
+    "description": "Simple jQuery.Deferred wrapper for loading images.",
+    "keywords": ["image","onload","deferred","promise"],
+    "homepage": "http://github.com/tkem/jquery-image/",
+    "bugs": "https://github.com/tkem/jquery-image/issues/"
+}
