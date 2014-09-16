@@ -6,12 +6,10 @@ module.exports = function(grunt) {
 
         plugin: "<%= pkg.name.replace(/^jquery-/, '') %>",
 
-        manifest: "<%= plugin %>.jquery.json",
-
         copyright: "(c) <%= grunt.template.today('yyyy') %>",
 
         clean: {
-            files: ["dist", "<%= manifest %>", "bower.json"]
+            files: ["dist", "<%= plugin %>.jquery.json", "bower.json"]
         },
 
         concat: {
@@ -34,8 +32,8 @@ module.exports = function(grunt) {
                 options: {
                     process: true
                 },
-                src: ["src/plugin.json"],
-                dest: "<%= manifest %>"
+                src: ["src/plugin.jquery.json"],
+                dest: "<%= plugin %>.jquery.json"
             },
             bower: {
                 options: {
@@ -53,7 +51,7 @@ module.exports = function(grunt) {
                     "<%= pkg.licenses[0].type %> License */\n"
             },
             dist: {
-                src: ["<%= pkg.main %>"],
+                src: ["src/**/*.js"],
                 dest: "<%= pkg.main.replace(/\\.js$/, '.min.js') %>"
             }
         },
