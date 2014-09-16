@@ -1,0 +1,31 @@
+{
+    "name": "jquery-image",
+    "version": "0.0.1",
+    "title": "jQuery Deferred Image Plugin",
+    "description": "Simple jQuery.Deferred wrapper for loading images.",
+    "keywords":  ["image", "onload", "deferred", "promise"],
+    "homepage": "http://github.com/tkem/jquery-image/",
+    "bugs": "https://github.com/tkem/jquery-image/issues/",
+    "license": "MIT",
+    "main": "dist/jquery.image.js",
+    "author": {
+        "name": "Thomas Kemmer",
+        "email": "tkemmer@computer.org"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tkem/jquery-image.git"
+    },
+    "dependencies": {
+        "jquery": ">=1.5"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.4",
+        "grunt-contrib-clean": "~0.4.0",
+        "grunt-contrib-concat": "~0.4.0",
+        "grunt-contrib-jshint": "~0.8.0",
+        "grunt-contrib-qunit": "~0.2.0",
+        "grunt-contrib-uglify": "~0.4.0",
+        "grunt-contrib-watch": "~0.6.1"
+    }
+}
