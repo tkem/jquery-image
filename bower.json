@@ -1,0 +1,25 @@
+{
+    "name": "jquery-image",
+    "description": "Simple jQuery.Deferred wrapper for loading images.",
+    "version": "0.1.1",
+    "main": "dist/jquery.image.js",
+    "license": "MIT",
+    "ignore": [
+        "**/.*",
+        "**/*.json",
+        "bower_components",
+        "node_modules",
+        "tests",
+        "Gruntfile.js",
+        "!bower.json"
+    ],
+    "keywords": ["image","onload","deferred","promise","jquery"],
+    "authors": [
+        "Thomas Kemmer <tkemmer@computer.org>"
+    ],
+    "homepage": "http://github.com/tkem/jquery-image/",
+    "repository": {"type":"git","url":"https://github.com/tkem/jquery-image.git"},
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
