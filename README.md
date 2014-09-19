@@ -11,6 +11,25 @@ as a wrapper for the native [image element constructor][3], and
 creates a Deferred object that will be resolved when an image has
 loaded.
 
+## Getting Started
+
+Most easily, the plugin can be installed via [Bower][5]:
+
+    bower install jquery-image
+
+To build and install from source, you need to have [npm][6] and
+[grunt][7] installed.  In the repository's root directory, run:
+
+    npm install
+    grunt test
+    grunt dist
+
+Either way, uncompressed and minified JavaScript files for inclusion
+in your project will be available in the `dist` directory:
+
+    dist/jquery.image.js
+    dist/jquery.image.min.js
+
 
 ## API Documentation
 
@@ -66,3 +85,6 @@ Licensed under the [MIT License][4].
 [2]: http://learn.jquery.com/code-organization/deferreds/examples/#image-loading
 [3]: http://developer.mozilla.org/en/docs/Web/API/HTMLImageElement.Image
 [4]: http://raw.github.com/tkem/jquery-image/master/LICENSE
+[5]: http://bower.io/
+[6]: http://www.npmjs.org/
+[7]: http://gruntjs.com/

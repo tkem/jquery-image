@@ -1,6 +1,6 @@
 {
     "name": "jquery-image",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "title": "jQuery Deferred Image Plugin",
     "description": "Simple jQuery.Deferred wrapper for loading images.",
     "keywords":  ["image", "onload", "deferred", "promise"],

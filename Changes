@@ -1,9 +1,16 @@
-Revision history for jQuery Deferred Image Plugin
+0.1.2 2014-09-19
+----------------
 
-0.1.1   2014-09-16
+- Add installation instructions to README.
 
-        - Publish to plugins.jquery.com.
 
-0.1.0   2014-09-16
+0.1.1 2014-09-16
+----------------
 
-        - Initial release.
+- Publish to plugins.jquery.com.
+
+
+0.1.0 2014-09-16
+----------------
+
+- Initial release.
